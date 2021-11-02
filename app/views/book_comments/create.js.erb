@@ -1,0 +1,4 @@
+$('#comment__textarea').val('')
+$('.book_comment_body').val('')
+$('.detail__table').html("<%= j(render 'books/detail', book: @comment.book) %>")
+$('.comment__table').html("<%= j(render 'book_comments/table', book_comments: @comment.book.book_comments ) %>")
